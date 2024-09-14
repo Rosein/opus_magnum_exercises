@@ -8,4 +8,7 @@ int power(int base, int exponent)
 int main ()
 {
     assert(power(2,3) == 8);
+
+    assert(power(1,8) == 1);
+
 }
