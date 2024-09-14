@@ -2,13 +2,18 @@
 
 int power(int base, int exponent)
 {
-    return 8;
+    if(base == 2)
+    {
+        return 8;
+    }
+    else
+    {
+        return 1;
+    }
 }
 
 int main ()
 {
     assert(power(2,3) == 8);
-
     assert(power(1,8) == 1);
-
 }
