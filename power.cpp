@@ -2,14 +2,14 @@
 
 int power(int base, int exponent)
 {
-    if(base == 2)
+    int result = 1;
+
+    for(int i = 0; i < exponent; ++i)
     {
-        return 8;
+        result = result * base;
     }
-    else
-    {
-        return 1;
-    }
+
+    return result;
 }
 
 int main ()
